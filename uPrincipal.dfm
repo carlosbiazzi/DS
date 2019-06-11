@@ -3043,6 +3043,10 @@ object FrmPrincipal: TFrmPrincipal
         OnClick = Aplicao1Click
       end
     end
+    object Ajuda1: TMenuItem
+      Caption = 'Ajuda'
+      OnClick = Ajuda1Click
+    end
     object Sair1: TMenuItem
       Caption = 'Sair'
       OnClick = Sair1Click

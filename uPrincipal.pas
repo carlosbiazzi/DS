@@ -43,6 +43,7 @@ type
     PrismabaseTRIANGULAR1: TMenuItem;
     N10: TMenuItem;
     Pedidos1: TMenuItem;
+    Ajuda1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure Navegador1Click(Sender: TObject);
     procedure Calendrio1Click(Sender: TObject);
@@ -60,6 +61,7 @@ type
     procedure PrismabaseRETANGULAR1Click(Sender: TObject);
     procedure Produtos1Click(Sender: TObject);
     procedure Pedidos1Click(Sender: TObject);
+    procedure Ajuda1Click(Sender: TObject);
      private
     { Private declarations }
   public
@@ -75,7 +77,7 @@ implementation
 
 uses uCalendario, uImc, uTabuada, uSobre, uTriangulo,
   uVolcone, uVolumec, uVolpt, uVolpr, uCadastro, uPed,
-  uProd;
+  uProd, uAjuda;
 
 
 procedure TFrmPrincipal.abuadas1Click(Sender: TObject);
@@ -85,6 +87,15 @@ begin
   Application.CreateForm(TFrmTabuada, FrmTabuada);
 end;
   FrmTabuada.Show;
+end;
+
+procedure TFrmPrincipal.Ajuda1Click(Sender: TObject);
+begin
+if(FrmAjuda = nil) Then
+begin
+  Application.CreateForm(TFrmAjuda, FrmAjuda);
+end;
+  FrmAjuda.Show;
 end;
 
 procedure TFrmPrincipal.Aplicao1Click(Sender: TObject);
